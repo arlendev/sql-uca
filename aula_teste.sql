@@ -33,6 +33,9 @@ WHERE CODIGO = 1;
 
 # alteração de uma informação na tabela
 UPDATE COR
-SET CESC_COR = 'BRANCO'
+SET DESC_COR = 'BRANCO'
 WHERE CODIGO = 3;
 
+# selecionando apenas um campo da tabela
+SELECT DESC_COR
+FROM COR;
