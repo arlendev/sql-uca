@@ -39,3 +39,17 @@ WHERE CODIGO = 3;
 # selecionando apenas um campo da tabela
 SELECT DESC_COR
 FROM COR;
+
+
+CREATE TABLE Pessoas
+(nome VARCHAR(50) NOT NULL);
+
+INSERT INTO Pessoas values('Joaquim José da Silva Xavier');
+INSERT INTO Pessoas values('Anita Garibaldi');
+SELECT * FROM Pessoas;
+INSERT INTO Pessoas values('Monteiro Lobato');
+UPDATE Pessoas SET nome = ‘Vital Brasil’ WHERE nome = ‘Joaquim José da Silva Xavier’
+INSERT INTO Pessoas values('Tarcila do Amaral');
+SELECT * FROM Pessoas;
+
+
