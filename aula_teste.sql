@@ -53,4 +53,14 @@ INSERT INTO veiculos(placa, modelo, ano, cod_cor)
 VALUES
 ('out2c34', 'honda titan', '2021', '7');
 
-SELECT * FROM veiculos;
+SELECT veiculos.placa, cor.desc_cor
+FROM veiculos INNER JOIN cor ON veiculos.cod_cor = cor.codigo;
+
+SELECT veiculos.placa, cor.desc_cor
+FROM veiculos LEFT JOIN cor ON veiculos.cod_cor = cor.codigo;
+
+SELECT veiculos.placa, veiculos.modelo, cor.desc_cor
+FROM veiculos RIGHT JOIN cor ON veiculos.cod_cor = cor.codigo;
+
+SELECT MAX(ano) AS veiculo_mais_novo
+FROM veiculos;
